@@ -69,7 +69,7 @@ isRainbow(chooseColors);
 // La cabecera de la función tendrá el siguiente aspecto: 
 // function add(myWords)
 
-function add(myWords: string[]): number {
+export function add(myWords: string[]): number {
     let sumChar = 0;
     for (const word of myWords) {
         sumChar += word.length;
@@ -79,3 +79,4 @@ function add(myWords: string[]): number {
 
 const myWordsArray: string[] = ["cuéntame", "todas", "las", "letras"];
 console.log(add(myWordsArray));
+

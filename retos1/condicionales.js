@@ -1,4 +1,7 @@
+"use strict";
 // ****RETOS CONDICIONALES****
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 //  2. Realizar una función que dada una fecha de nacimiento te devuelva 
 // el signo zodiacal. La fecha de nacimiento vendrá indicada por 
 // dos números : dia y mes. La cabecera de la función tendrá el 
@@ -100,5 +103,6 @@ function isEven(number) {
         return "El n\u00FAmero ".concat(number, " es impar");
     }
 }
+exports.isEven = isEven;
 console.log(isEven(4651));
 console.log(isEven(268));

@@ -1,4 +1,7 @@
+"use strict";
 // ****RETOS BUCLES FOR****
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 // 2. Realizar una función que imprima los números impares existentes 
 // hasta el número indicado como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: 
@@ -58,5 +61,6 @@ function add(myWords) {
     }
     return sumChar;
 }
+exports.add = add;
 var myWordsArray = ["cuéntame", "todas", "las", "letras"];
 console.log(add(myWordsArray));

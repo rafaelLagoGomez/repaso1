@@ -87,7 +87,7 @@ console.log(continent("Marte"));
 // La cabecera de la función tendrá el siguiente aspecto: 
 // function isEven (number)
 
-function isEven(number: number) {
+export function isEven(number: number) {
     if (number % 2 === 0) {
         return `El número ${number} es par`;
     } else {
