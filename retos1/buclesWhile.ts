@@ -7,20 +7,22 @@
 
 function hasEven(myNums: number[]) {
     let i = 0;
+    let rest = false;
     while (i < myNums.length) {
         if (myNums[i] % 2 === 0) {
-            console.log(true);
+            rest = true;
+            i = myNums.length;
         }
         i++;
     }
-    console.log(false);
+    return rest;
 }
 
-const numbsArray: number[] = [155, 45, 1 ,59];
-hasEven(numbsArray);
+const numbsArray1: number[] = [155, 45, 1 ,59];
+console.log(hasEven(numbsArray1));
 
 const numbsArray2: number[] = [160, 45, 1 ,59];
-hasEven(numbsArray);
+console.log(hasEven(numbsArray2));
 
 
 
@@ -33,15 +35,15 @@ function startWithM(myNames: string[]) {
     let i = 0;
     while (i < myNames.length) {
         if (!myNames[i].startsWith("M")) {
-            console.log(false);
+            return false;
         }
         i++;
     }
-    console.log(true);
+    return true;
 }
 
 const namesArray1: string[] = ["Manolo", "Fátima", "Luis"];
-startWithM(namesArray1);
+console.log(startWithM(namesArray1));
 
 const namesArray2: string[] = ["Manolo", "Marta", "Miguel"];
-startWithM(namesArray1);
+console.log(startWithM(namesArray2));

@@ -5,18 +5,20 @@
 // function hasEven myNums
 function hasEven(myNums) {
     var i = 0;
+    var rest = false;
     while (i < myNums.length) {
         if (myNums[i] % 2 === 0) {
-            console.log(true);
+            rest = true;
+            i = myNums.length;
         }
         i++;
     }
-    console.log(false);
+    return rest;
 }
-var numbsArray = [155, 45, 1, 59];
-hasEven(numbsArray);
+var numbsArray1 = [155, 45, 1, 59];
+console.log(hasEven(numbsArray1));
 var numbsArray2 = [160, 45, 1, 59];
-hasEven(numbsArray);
+console.log(hasEven(numbsArray2));
 // 3. Realizar una función que reciba un array de nombres y te 
 // devuelva verdadero si y solo si todos los nombres empiezan por M
 // La cabecera de la función tendrá el siguiente aspecto: 
@@ -25,13 +27,13 @@ function startWithM(myNames) {
     var i = 0;
     while (i < myNames.length) {
         if (!myNames[i].startsWith("M")) {
-            console.log(false);
+            return false;
         }
         i++;
     }
-    console.log(true);
+    return true;
 }
 var namesArray1 = ["Manolo", "Fátima", "Luis"];
-startWithM(namesArray1);
+console.log(startWithM(namesArray1));
 var namesArray2 = ["Manolo", "Marta", "Miguel"];
-startWithM(namesArray1);
+console.log(startWithM(namesArray2));
